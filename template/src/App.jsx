@@ -1,5 +1,7 @@
+import React from "react";
 import { Garagem } from "./Componentes/Garagem/Garagem";
 import GlobalStyles from "./GlobalStyle";
+import Rodape from "./Componentes/Footer";
 
 export default function App() {
   const nome = "Labenu";
@@ -11,9 +13,11 @@ export default function App() {
   return (
     <>
       <GlobalStyles />
+
       <div className="App">
         <Garagem nome={nome} mensagemAprentacao={apresentaGaragem} />
       </div>
+      <Rodape />
     </>
   );
 }
